@@ -79,7 +79,6 @@ public class HttpUtil {
 	}
 	
 	
-	
 	/**
 	 * httpsPost CHARSET UTF-8
 	 * @param url
