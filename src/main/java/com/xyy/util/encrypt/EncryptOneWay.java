@@ -20,7 +20,7 @@ public class EncryptOneWay {
 	 *            明文
 	 * @return 密文 小写
 	 */
-	public static String md5(String text) {
+	public static String MD5(String text) {
 		return encrypt(MD5,text, "UTF-8");
 	}
 	/**
@@ -30,8 +30,8 @@ public class EncryptOneWay {
 	 * 
 	 * @return 密文 大写
 	 */
-	public static String md5UpperCase(String text) {
-		return md5(text).toUpperCase();
+	public static String MD5UpperCase(String text) {
+		return MD5(text).toUpperCase();
 	}
 	
 	/**
@@ -64,7 +64,7 @@ public class EncryptOneWay {
 	 * 
 	 * @return 密文
 	 */
-	public static String encrypt(String encryptType,String text, String charsetname) {
+	private static String encrypt(String encryptType,String text, String charsetname) {
 		if (charsetname == null || "".equals(charsetname)){
 			charsetname = "UTF-8";
 		}
